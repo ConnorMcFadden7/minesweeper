@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Minesweeper - JavaScript </title>
+		
+		<script>
+			
+			var properties = {
+				rows: 10,
+				cols: 10,
+				width: 30,
+				height: 30,
+				fps: 30
+			};
+
+			var c;
+
+			window.onload = function() {
+				var canvas = document.getElementById("mineSweeperCanvas");
+				c = canvas.getContext("2d");
+
+				init();
+			}
+
+			var box = new Image();
+			box.src = "box.png";
+
+			function init() {
+				
+
+				redraw();
+			}
+
+			function redraw() {
+				c.clearRect(0, 0, 400, 400);
+
+				c.drawImage(box, 10, 10);
+				c.drawImage(box, 41, 10);
+				c.drawImage(box, 72, 10);
+				c.drawImage(box, 103, 10);
+				c.drawImage(box, 134, 10);
+				c.drawImage(box, 165, 10);
+				c.drawImage(box, 196, 10);
+				c.drawImage(box, 227, 10);
+				c.drawImage(box, 258, 10);
+				c.drawImage(box, 289, 10);
+
+				c.drawImage(box, 10, 41);
+				c.drawImage(box, 41, 41);
+				c.drawImage(box, 72, 41);
+				c.drawImage(box, 103, 41);
+				c.drawImage(box, 134, 41);
+				c.drawImage(box, 165, 41);
+				c.drawImage(box, 196, 41);
+				c.drawImage(box, 227, 41);
+				c.drawImage(box, 258, 41);
+				c.drawImage(box, 289, 41);
+
+				c.drawImage(box, 10, 72);
+				c.drawImage(box, 41, 72);
+				c.drawImage(box, 72, 72);
+				c.drawImage(box, 103, 72);
+				c.drawImage(box, 134, 72);
+				c.drawImage(box, 165, 72);
+				c.drawImage(box, 196, 72);
+				c.drawImage(box, 227, 72);
+				c.drawImage(box, 258, 72);
+				c.drawImage(box, 289, 72);
+
+				c.drawImage(box, 10, 103);
+				c.drawImage(box, 41, 103);
+				c.drawImage(box, 72, 103);
+				c.drawImage(box, 103, 103);
+				c.drawImage(box, 134, 103);
+				c.drawImage(box, 165, 103);
+				c.drawImage(box, 196, 103);
+				c.drawImage(box, 227, 103);
+				c.drawImage(box, 258, 103);
+				c.drawImage(box, 289, 103);
+
+				c.drawImage(box, 10, 134);
+				c.drawImage(box, 41, 134);
+				c.drawImage(box, 72, 134);
+				c.drawImage(box, 103, 134);
+				c.drawImage(box, 134, 134);
+				c.drawImage(box, 165, 134);
+				c.drawImage(box, 196, 134);
+				c.drawImage(box, 227, 134);
+				c.drawImage(box, 258, 134);
+				c.drawImage(box, 289, 134);
+
+				c.drawImage(box, 10, 165);
+				c.drawImage(box, 41, 165);
+				c.drawImage(box, 72, 165);
+				c.drawImage(box, 103, 165);
+				c.drawImage(box, 134, 165);
+				c.drawImage(box, 165, 165);
+				c.drawImage(box, 196, 165);
+				c.drawImage(box, 227, 165);
+				c.drawImage(box, 258, 165);
+				c.drawImage(box, 289, 165);
+
+				c.drawImage(box, 10, 196);
+				c.drawImage(box, 41, 196);
+				c.drawImage(box, 72, 196);
+				c.drawImage(box, 103, 196);
+				c.drawImage(box, 134, 196);
+				c.drawImage(box, 165, 196);
+				c.drawImage(box, 196, 196);
+				c.drawImage(box, 227, 196);
+				c.drawImage(box, 258, 196);
+				c.drawImage(box, 289, 196);
+
+				c.drawImage(box, 10, 227);
+				c.drawImage(box, 41, 227);
+				c.drawImage(box, 72, 227);
+				c.drawImage(box, 103, 227);
+				c.drawImage(box, 134, 227);
+				c.drawImage(box, 165, 227);
+				c.drawImage(box, 196, 227);
+				c.drawImage(box, 227, 227);
+				c.drawImage(box, 258, 227);
+				c.drawImage(box, 289, 227);
+
+				c.drawImage(box, 10, 258);
+				c.drawImage(box, 41, 258);
+				c.drawImage(box, 72, 258);
+				c.drawImage(box, 103, 258);
+				c.drawImage(box, 134, 258);
+				c.drawImage(box, 165, 258);
+				c.drawImage(box, 196, 258);
+				c.drawImage(box, 227, 258);
+				c.drawImage(box, 258, 258);
+				c.drawImage(box, 289, 258);
+
+				c.drawImage(box, 10, 289);
+				c.drawImage(box, 41, 289);
+				c.drawImage(box, 72, 289);
+				c.drawImage(box, 103, 289);
+				c.drawImage(box, 134, 289);
+				c.drawImage(box, 165, 289);
+				c.drawImage(box, 196, 289);
+				c.drawImage(box, 227, 289);
+				c.drawImage(box, 258, 289);
+				c.drawImage(box, 289, 289);
+			}
+
+		</script>
+
+	</head>
+	<body>
+
+		<div id="controls">
+
+		</div>
+		<div id="gameCanvas">
+			<canvas id="mineSweeperCanvas" width="400" height="400"></canvas>
+		</div>
+	</body>
+</html>
